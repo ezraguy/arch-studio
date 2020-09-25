@@ -1,14 +1,10 @@
 .App {
   font-family: 'Spartan';
   
-  padding-left: 10%;
-  padding-right: 10%; 
-  overflow-x: hidden !important;
   
 }
 
 .page-name{
-  
   position: absolute;
   top: 200px;
   left:20px;
@@ -21,6 +17,7 @@
 }
 
 .line{
+  z-index: 999;
   position: absolute;
   top: 0px;
   left: 80px;
@@ -30,6 +27,9 @@
   
 }
 
+html,body{
+  overflow-x: hidden;
+}
 
 @media screen and (max-width:459px){
   .App{

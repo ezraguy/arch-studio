@@ -1,6 +1,6 @@
 .slider{
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     align-items: center !important;
     position: relative;
     width: 80%;
@@ -16,7 +16,7 @@
         justify-self: center ;
     }
     .main{
-        
+        margin-bottom: 100px;
         position: relative;
         display: flex;
         justify-content: center;
@@ -160,7 +160,7 @@
         .content{
         
           .project-title{
-            font-size: 52pt !important;
+            font-size: 52pt ;
           }
 
           .show-portfolio-wrap{
@@ -179,6 +179,17 @@
 }
 
 
+@media screen and (max-width:550px){
+  
+        .project-title{
+            font-size:32pt !important;
+     }
+     .show-portfolio-wrap{
+         margin-left: 0 !important;
+     }
+    
+}
+
 @media screen and (max-width:459px){
     
         .swiper-container{
@@ -194,15 +205,16 @@
         .main{
             max-height: 500px;
             width:100% ;
+            padding: 0;
 
             .content{
                 padding-bottom: 20% ;
-                padding-left: 5% !important;
-                justify-content: center ;
                 width: 80% ;
+                
 
               .project-title{
                 font-size: 32pt !important;
+                
               }
 
               .project-text{
