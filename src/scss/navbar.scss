@@ -1,0 +1,31 @@
+.navbar{
+   
+    width: 100%;
+    color: black;
+    padding-top: 2rem;
+    background-color: #fff;
+    display: flex;
+    margin-bottom: 20px;
+    
+    .logo{
+        width: 100px;
+        height: 50px;
+        margin-right: 6rem;
+    }
+
+    .nav-items{
+        width: 100%;
+        display: flex;
+        padding-top: 10px;
+        .nav-item{
+            font-weight: bold;
+            cursor: pointer;
+            padding-right:2rem ;
+            color: #7D828F;
+
+          &:active{
+            color: #60636D;
+          }
+        }
+    }
+}
