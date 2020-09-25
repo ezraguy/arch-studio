@@ -1,7 +1,10 @@
 .App {
   font-family: 'Spartan';
-  margin-left: 10%;
-  margin-right: 10%;
+  
+  padding-left: 10%;
+  padding-right: 10%; 
+  overflow-x: hidden !important;
+  
 }
 
 .page-name{
@@ -26,3 +29,30 @@
   border-left: 1px #C8CCD8 solid;
   
 }
+
+
+@media screen and (max-width:459px){
+  .App{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+@media screen and (max-width:850px){
+  
+  
+    
+  .page-name{
+  
+    display: none;
+    
+  }
+  
+  .line{
+   display: none;
+    
+  }
+}
+
+
