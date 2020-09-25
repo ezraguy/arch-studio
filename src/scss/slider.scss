@@ -112,7 +112,9 @@
             border: 0;
             outline: 0;
             transition: .2s ease; 
-           
+           &:active{
+               background-color: #C8CCD8;
+           }
         }
 
         .slider-item-active{
