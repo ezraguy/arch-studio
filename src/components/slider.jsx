@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../scss/slider.scss';
+import '../scss/general.scss';
 
 import firstSlide from '../images/home-images/desktop/image-hero-paramour.jpg';
 import secondSlide from '../images/home-images/desktop/image-hero-seraph.jpg';
@@ -21,6 +22,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
 import 'swiper/components/effect-fade/effect-fade.scss';
 import SwiperCore, { EffectFade } from 'swiper';
+
 
 
 
@@ -121,7 +123,7 @@ const Slider = () => {
                                     <div className="show-portfolio-wrap">
                                         <button
 
-                                            className="show-portfolio">See Our portfolio
+                                            className="main-btn">See Our portfolio
                                 <img src={arrow} className="arrow" alt="" />
                                         </button>
                                     </div>

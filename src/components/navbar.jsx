@@ -15,7 +15,6 @@ const Navbar = () => {
     }
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            console.log(window.pageYOffset);
             if (window.pageYOffset > 100) {
                 setNavBarClass(true);
             }

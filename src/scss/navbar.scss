@@ -12,16 +12,16 @@
    
 }
 .navbar{
-    padding-left: 10%;
-    padding-right: 10%; 
-    width: 100%;
+    padding-left: 18%;
+    box-sizing: border-box;
+    width: 100% ;
     z-index: 300;
     color: black;
-    padding-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: #fff;
     display: flex;
     margin-bottom: 20px;
-    padding-left: 10%;
     position: relative;
     
     
@@ -29,6 +29,9 @@
         width: 80px;
         height: 40px;
         margin-right: 6rem;
+        
+        
+        
     }
 
     .nav-items{
@@ -77,21 +80,22 @@
 
 @media screen and (max-width:665px){
   .navbar{
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     padding-top: 1rem;
-    width: 80%;
     display: flex;
-    height: 50px;
-   
-
+    height: 60px;
+   padding-left: 5%;
+   padding-right: 5%;
+    
    .nav-items{
+     width: 80% ;
      margin-left: auto;
      display: none;
      background-color: #EEEFF4;
      position: absolute;
      min-height: 200px;
-     width: inherit !important;
-     margin-top: 70px;
+     width: 80%;
+     margin-top: 44px;
      z-index: -1;
      right: 0;
      
@@ -105,7 +109,9 @@
 }
 
    .burger-icon{
-    display: block;
+    display:block;
+    margin-top: 10px;
+    height: 30px;
     margin-left: auto ;
     z-index: 1000;
   }

@@ -1,7 +1,16 @@
 .main{
    display: flex;
    justify-content: center;
-   margin-bottom: 500px;
    padding-left: 10%;
   padding-right: 10%; 
+  
+}
+
+
+@media screen and (max-width:550px){
+  
+ .main{
+   padding: 0 !important;
+ }
+
 }
