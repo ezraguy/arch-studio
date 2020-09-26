@@ -28,7 +28,7 @@ const Navbar = () => {
 
     return (
         <React.Fragment>
-            <div className={navBarClass ? "navbar fixed" : "navbar"}>
+            <div className={navBarClass ? "navbar fixed shadow" : "navbar"}>
                 <img src={logo} alt="logo" className="logo" />
                 <div className={navItemsClass ? 'nav-items show' : 'nav-items'}>
                     <div className="nav-item">
