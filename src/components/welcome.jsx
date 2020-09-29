@@ -1,8 +1,8 @@
 import React from 'react';
 import '../scss/welcome.scss';
 import '../scss/general.scss';
-import imgWelcomg from '../images/home-images/desktop/image-welcome.jpg';
-import smallTeam from '../images/home-images/desktop/image-small-team.jpg'
+import imgWelcomg from '../images/home-images/image-welcome.jpg';
+import smallTeam from '../images/home-images/image-small-team.jpg'
 import arrow from '../images/icons/icon-arrow.svg';
 
 const Welcome = () => {
