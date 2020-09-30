@@ -1,9 +1,8 @@
 import React from 'react';
 import '../scss/welcome.scss';
-import '../scss/general.scss';
-import imgWelcomg from '../images/home-images/image-welcome.jpg';
+import imgWelcome from '../images/home-images/image-welcome.jpg';
 import smallTeam from '../images/home-images/image-small-team.jpg'
-import arrow from '../images/icons/icon-arrow.svg';
+import MainButton from './utils/main-button';
 
 const Welcome = () => {
     return (
@@ -13,7 +12,7 @@ const Welcome = () => {
             <div className="welcome">
                 <div className="welcome-line"></div>
                 <p className="welcome-banner">Welcome</p>
-                <div className="content">
+                <div className="welcome-content">
                     <div className="welcome-title">
                         Welcome to Arch Studio
             </div>
@@ -30,8 +29,7 @@ const Welcome = () => {
                 </div>
 
                 <div className="img-wrap">
-
-                    <img src={imgWelcomg} className="welcome-img" alt="welcome" />
+                    <img src={imgWelcome} className="welcome-img" alt="welcome" />
                 </div>
 
 
@@ -40,17 +38,18 @@ const Welcome = () => {
                 <div className="small-team-big-ideas">
                     <img className="team-img" src={smallTeam} alt="team" />
                     <div className="content">
-
                         <p className="team-title">Small team, big ideas</p>
-                        <button className="main-btn">About us
-                        <img src={arrow} className="arrow" alt="" />
-                        </button>
+                        <div className="button-wrap">
+
+                            <MainButton text="About us" />
+                        </div>
+
                     </div>
                 </div>
             </div>
 
 
-        </React.Fragment>
+        </React.Fragment >
     );
 }
 

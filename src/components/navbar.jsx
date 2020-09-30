@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../scss/navbar.scss';
-import logo from '../images/logo.svg'
 import hamburger from '../images/icons/icon-hamburger.svg';
 import closeIcon from '../images/icons/icon-close.svg';
+import Logo from './utils/logo';
 const Navbar = () => {
     const [navItemsClass, setNavItemsClass] = useState(false);
     const [navBarClass, setNavBarClass] = useState(false);
@@ -29,7 +29,7 @@ const Navbar = () => {
     return (
         <React.Fragment>
             <div className={navBarClass ? "navbar fixed shadow" : "navbar"}>
-                <img src={logo} alt="logo" className="logo" />
+                <Logo fill={"black"} />
                 <div className={navItemsClass ? 'nav-items show' : 'nav-items'}>
                     <div className="nav-item">
                         <p>Portfolio</p>

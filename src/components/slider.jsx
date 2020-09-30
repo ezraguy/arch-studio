@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../scss/slider.scss';
-import '../scss/general.scss';
-
+import MainButton from '../components/utils/main-button';
 import firstSlide from '../images/home-images/image-hero-paramour.jpg';
 import secondSlide from '../images/home-images/image-hero-seraph.jpg';
 import thirdSlide from '../images/home-images/image-hero-federal.jpg';
 import fourthSlide from '../images/home-images/image-hero-trinity.jpg';
-import arrow from '../images/icons/icon-arrow.svg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
 import 'swiper/components/effect-fade/effect-fade.scss';
@@ -18,7 +16,7 @@ import SwiperCore, { EffectFade } from 'swiper';
 const Slider = () => {
 
     SwiperCore.use([EffectFade]);
-    const [screenWidth, setScreenWidth] = useState(0);
+
     const [swiper, setSwiper] = useState({});
     const [projects, setProjects] = useState([
         {
@@ -35,15 +33,7 @@ const Slider = () => {
 
     ]);
 
-    const handleResize = () => {
-        let screenWidth = window.innerWidth;
-        setScreenWidth(screenWidth)
-    }
-    useEffect(() => {
-        handleResize();
-        window.addEventListener('resize', handleResize);
 
-    }, [])
 
 
 
@@ -100,11 +90,7 @@ const Slider = () => {
                                     <div className="project-title">{item.title}</div>
                                     <div className="project-text">{item.text}</div>
                                     <div className="show-portfolio-wrap">
-                                        <button
-
-                                            className="main-btn">See Our portfolio
-                                <img src={arrow} className="arrow" alt="" />
-                                        </button>
+                                        <MainButton text="See our portfolio" />
                                     </div>
                                 </div>
 
