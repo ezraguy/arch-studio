@@ -1,6 +1,7 @@
 import React from 'react';
 import '../scss/about.scss';
 import heroImg from '../images/about-images/image-hero.jpg';
+import heritageImg from '../images/about-images/image-heritage.jpg'
 const About = () => {
     return (
         <div className="about">
@@ -22,6 +23,20 @@ const About = () => {
                             Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings.
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div className="heritage">
+                <div className="heritage-line"></div>
+                <div className="heritage-content">
+                    <div className="heritage-header">Our Heritage</div>
+
+                    <div className="heritage-text">Founded in 2007, we started as a trio of architects. Our complimentary skills and relentless attention to detail turned Arch into one of the most sought after boutique firms in the country.</div>
+                    <div className="heritage-text"> Speciliazing in Urban Design allowed us to focus on creating exceptional structures that live in harmony with their surroundings. We consider every detail from every surrounding element to inform our designs.</div>
+                    <div className="heritage-text">Our small team of world-class professionals provides input on every project.</div>
+                </div>
+                <div className="heritage-image-wrap">
+                    <img src={heritageImg} className="heritage-img" alt="" />
                 </div>
             </div>
         </div>

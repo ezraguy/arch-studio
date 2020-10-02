@@ -1,7 +1,8 @@
 .about{
    
     
-    padding-left: 10%;
+   
+    margin-bottom: 250px;
     .about-main{
         
         
@@ -76,6 +77,53 @@
         top: 250px;
         left: -25px;
     }
+
+
+    .heritage{
+        position: relative;
+        display: flex;
+       justify-content: space-evenly;
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+        
+
+        .heritage-line{
+            position: absolute;
+            left: 10%;
+            width: 40px;
+            border-top: 1px solid rgba(128, 128, 128, 0.454);
+        }
+
+        .heritage-content{
+        
+            .heritage-header{
+                margin-top: 50px;
+                margin-bottom: 50px;
+                font-weight: bold;
+                color: black;
+                font-size: 25pt;
+               width: 100px;
+            }
+            .heritage-text{
+                
+                color: #7D828F;
+                margin-bottom: 20px;
+               
+                text-align: left;
+            }
+            
+        }
+        .heritage-image-wrap{
+           
+            height: 100% ;
+            width: 500px !important ;
+            .heritage-img{
+                height: 100% !important;
+                width: inherit;
+            }
+        }
+       
+    }
 }
 
 @media screen and (max-width:1160px){
@@ -114,7 +162,25 @@
 
         
     }
+
+    .page-name{ 
+        display: none;
+    }   
+    .line{
+        display: none;
+    }
+
+
+
+    
  }
+}
+
+
+@media screen and (max-width:900px){
+    .heritage-image-wrap{
+        display: none;
+    }
 }
 
 
@@ -138,21 +204,25 @@
             max-width: 360px !important;
             
         }
-        .about-text{
-            
-            // max-width: 100% !important;
-        }
+        
     
              }
          }
+
+         .heritage{
+            .heritage-image-wrap{
+               display: none;
+    
+            }
+        }   
     }
+
+    
 }
 
-@media screen and (max-width:590px){
+@media screen and (max-width:630px){
 
-    .about{
-        display: flex ;
-        
+    .about{   
         width: 100%;
         .about-main{
             padding: 0;
@@ -176,13 +246,12 @@
 
                 min-width: 100% !important;
                 max-width: 100% !important;
-              
+                padding-left: 10%;
                 position: relative;
                 margin-left: 0 !important;
                 margin-top: 0;
-                
-                
-                box-sizing: border-box;
+            
+              
                 .about-content{
                     position: relative;
                     width: 100% !important;
@@ -190,9 +259,9 @@
                     display: flex;
                     flex-direction: column;
 
-                    
-
-                    
+                    .about-header{
+                        font-size:30pt !important;
+                    }
                 }
 
                 .about-banner{
