@@ -26,6 +26,10 @@
   border-left: 1px #C8CCD8 solid;
   
 }
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
 
 html,body{
   overflow-x: hidden;

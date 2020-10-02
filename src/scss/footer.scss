@@ -21,16 +21,19 @@
 
     .links{
         font-weight: bold;
-        color: #7D828F;
+        color: #7D828F !important;
         height: inherit;
         align-items: center;
         display: flex;
         position: relative;
         width: 100%;
-        p{
+        .link{
+            text-decoration: none;
             cursor: pointer;
             padding-right: 70px;
-            
+            &:visited{
+                color: #7D828F;
+            }
         }
     }
 
@@ -64,10 +67,8 @@
         .links{
             
             width: 100%;
-            p{
-                cursor: pointer;
-                padding-right: 20px;
-                
+            .link{
+                padding: 5px !important ;
             }
         }
         .btn-wrap{
@@ -98,8 +99,9 @@
             margin-top: 120px;
             flex-direction: column;
             margin-bottom: 30px;
-            p{
-                padding: 0;
+            .link{
+                padding-right: 0 !important ;
+                padding-bottom: 30px !important;
             }
         }
         .btn-wrap{

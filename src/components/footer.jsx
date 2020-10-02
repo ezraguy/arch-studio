@@ -2,6 +2,7 @@ import React from 'react'
 import '../scss/footer.scss';
 import Logo from './utils/logo';
 import MainButton from '../components/utils/main-button';
+import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div className="footer">
@@ -9,9 +10,11 @@ const Footer = () => {
                 <Logo fill={"white"} />
             </div>
             <div className="links">
-                <p>Portfolio</p>
-                <p>About Us</p>
-                <p>Contact</p>
+                <Link className="link" to="portfolio">
+                    portfolio
+                </Link>
+                <Link className="link" to="about">About Us</Link>
+                <Link className="link" to="contact">Contact</Link>
             </div>
 
             <div className="btn-wrap">

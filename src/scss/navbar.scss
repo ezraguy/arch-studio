@@ -36,14 +36,16 @@
         display: flex;
         padding-top: 10px;
         .nav-item{
+          
            text-decoration: none;
             font-weight: bold;
             cursor: pointer;
             padding-right:2rem ;
             color: #7D828F;
-
-          &:active{
+            text-decoration: none;
+          &:active {
             color: #60636D;
+           background-color: transparent;
           }
         }
     }
@@ -89,6 +91,7 @@
    
 
    .nav-items{
+     padding-left: 10px;
      width: 80% ;
      margin-left: auto;
      display: none;
