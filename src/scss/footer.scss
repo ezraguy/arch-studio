@@ -3,9 +3,12 @@
     margin-right: 10%;
     margin-left: 10%;
     background-color: #EEEFF4;
-   min-height: 150px;
+    min-height: 150px;
     display: flex;
-    position: relative;
+    width: 80%;
+    position: sticky;
+    left: 0;
+    bottom: 0;
     .name{
         display: flex;
         width: 200px;

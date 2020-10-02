@@ -3,6 +3,8 @@ import '../scss/navbar.scss';
 import hamburger from '../images/icons/icon-hamburger.svg';
 import closeIcon from '../images/icons/icon-close.svg';
 import Logo from './utils/logo';
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
     const [navItemsClass, setNavItemsClass] = useState(false);
     const [navBarClass, setNavBarClass] = useState(false);
@@ -29,26 +31,33 @@ const Navbar = () => {
     return (
         <React.Fragment>
             <div className={navBarClass ? "navbar fixed shadow" : "navbar"}>
-                <Logo fill={"black"} />
+                <Link to="/">
+                    <Logo fill={"black"} />
+                </Link>
                 <div className={navItemsClass ? 'nav-items show' : 'nav-items'}>
-                    <div className="nav-item">
-                        <p>Portfolio</p>
-                    </div>
-                    <div className="nav-item">
-                        <p>About Us</p>
-                    </div>
-                    <div className="nav-item">
-                        <p>Contact</p>
-                    </div>
 
-                </div>
+                    <Link className="nav-item" to="portfolio">
+                        <p>Portfolio</p>
+                    </Link>
+
+                    <Link className="nav-item" to="about">
+                        <p>About Us</p>
+                    </Link>
+
+                    <Link className="nav-item" to="contact">
+                        <p>Contact</p>
+                    </Link>
+
+
+                </div >
                 <button onClick={handleMobileNav} className="burger-icon">
                     <img src={navIcon ? closeIcon : hamburger} alt="burger-icon" /></button>
-            </div>
-            {overlay &&
+            </div >
+            {
+                overlay &&
                 <div className="overlay"></div>
             }
-        </React.Fragment>
+        </React.Fragment >
     );
 }
 

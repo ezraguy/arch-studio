@@ -6,7 +6,8 @@ import Welcome from './welcome';
 const Main = () => {
     return (
         <div className="main">
-
+            <div className="line"></div>
+            <div className="page-name">HOME</div>
             <Slider />
             <Welcome />
             <Featured />

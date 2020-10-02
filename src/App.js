@@ -3,14 +3,18 @@ import './App.css';
 import Footer from './components/footer';
 import Main from './components/main';
 import Navbar from './components/navbar';
+import { Switch, Route } from 'react-router-dom';
+import About from './components/about';
+
 
 function App() {
   return (
     <div className="App">
-      <div className="line"></div>
-      <div className="page-name">HOME</div>
       <Navbar />
-      <Main />
+      <Switch>
+        <Route path="/about" component={About} />
+        <Route path="/" component={Main} />
+      </Switch>
       <Footer />
     </div>
   );
