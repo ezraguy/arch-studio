@@ -7,12 +7,12 @@
 .page-name{
   position: absolute;
   top: 200px;
-  left:20px;
+  left: 20px;
   transform: rotate(90deg);
   font-size: 12pt;
   letter-spacing: 15px;
   color: #C8CCD8;
-  
+  text-transform: uppercase;
   
 }
 

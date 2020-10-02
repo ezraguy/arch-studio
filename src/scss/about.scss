@@ -1,13 +1,13 @@
 .about{
    
-    position: relative;
     
+    padding-left: 10%;
     .about-main{
         
         
         position: relative;
         display: flex;
-        justify-content: center !important;
+
         margin-bottom: 300px;
 
         .about-img-wrap{
@@ -71,6 +71,11 @@
             }
         }
     }   
+
+    .page-name{
+        top: 250px;
+        left: -25px;
+    }
 }
 
 @media screen and (max-width:1160px){

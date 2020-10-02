@@ -4,6 +4,8 @@ import heroImg from '../images/about-images/image-hero.jpg';
 const About = () => {
     return (
         <div className="about">
+            <div className="line"></div>
+            <div className="page-name">About Us</div>
             <div className="about-main">
                 <div className="about-img-wrap">
                     <img src={heroImg} className="about-hero-img" alt="about main" />
