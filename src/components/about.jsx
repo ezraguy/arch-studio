@@ -44,11 +44,11 @@ const About = () => {
                     <div className="heritage-header">Our Heritage</div>
 
                     <div className="heritage-text">Founded in 2007, we started as a trio of architects. Our complimentary skills and relentless attention to detail turned Arch into one of the most sought after boutique firms in the country.</div>
-                    <div className="heritage-text"> Speciliazing in Urban Design allowed us to focus on creating exceptional structures that live in harmony with their surroundings. We consider every detail from every surrounding element to inform our designs.</div>
+                    <div className="heritage-text"> Specializing in Urban Design allowed us to focus on creating exceptional structures that live in harmony with their surroundings. We consider every detail from every surrounding element to inform our designs.</div>
                     <div className="heritage-text">Our small team of world-class professionals provides input on every project.</div>
                 </div>
                 <div className="heritage-image-wrap">
-                    <img src={heritageImg} className="heritage-img" alt="" />
+                    <img src={heritageImg} className="heritage-img" alt="heritage" />
                 </div>
             </div>
 

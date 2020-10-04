@@ -85,7 +85,7 @@
 
         .heritage-line{
             position: absolute;
-            left: 10%;
+            left: 0;
             width: 40px;
             border-top: 1px solid rgba(128, 128, 128, 0.454);
         }
@@ -263,6 +263,10 @@
           padding-left: 10%;
          .heritage-text{
              max-width: 80% !important;
+         }
+
+         .heritage-line{
+            left: 10% !important;
          }
         }
 
