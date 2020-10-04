@@ -1,11 +1,9 @@
 .about{
    
-    
-   
+    padding-right: 10%;
+    padding-left: 10%;
     margin-bottom: 250px;
-    .about-main{
-        
-        
+    .about-main{ 
         position: relative;
         display: flex;
 
@@ -49,7 +47,6 @@
                     left: 25%;
                     content: '';
                     width: 50px;
-                    
                     border-top: 1px #C8CCD8 solid;
                 }
 
@@ -83,8 +80,7 @@
         position: relative;
         display: flex;
        justify-content: space-evenly;
-        padding-left: 10% !important;
-        padding-right: 10% !important;
+     
         
 
         .heritage-line{
@@ -95,7 +91,8 @@
         }
 
         .heritage-content{
-        
+
+
             .heritage-header{
                 margin-top: 50px;
                 margin-bottom: 50px;
@@ -105,10 +102,9 @@
                width: 100px;
             }
             .heritage-text{
-                
+                max-width: 50%;
                 color: #7D828F;
                 margin-bottom: 20px;
-               
                 text-align: left;
             }
             
@@ -123,6 +119,89 @@
             }
         }
        
+    }
+
+    .leaders{
+        display: flex;
+        min-height: 50vh;
+        margin-top: 200px;
+        justify-content: space-between;
+        position: relative;
+
+        .leaders-title{
+            font-size: 35pt;
+            width: 200px;
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+        .team{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 25px;
+            grid-row-gap: 15px;
+            
+            
+            .worker{   
+                position: relative;
+                padding: 0;
+
+                .worker-img-wrap{
+                    position: relative;
+                    display: flex;
+                    .overlay {
+                        box-sizing: border-box;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 100%;
+                        width: 100%;
+                        opacity: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: .3s ease;
+                        background-color: rgba(0, 0, 0, 0.434);
+    
+                            svg{
+                                cursor: pointer;
+                                padding: 5px;
+                            }
+                            .twitter-icon{
+                                margin-right: 30px !important;
+                            }
+                      }            
+                    .worker-img{
+                        
+                        width: 100%;
+                    }
+                    &:hover{
+                        .overlay{
+                            opacity: 1;
+                        }
+                    }
+                }
+               
+                
+                .worker-name{
+                    font-weight: bold;
+                    padding-top: 10px;
+                    font-size: 13pt;
+                }
+                .worker-role{
+                    padding-top: 5px;
+                    font-size: 11pt;
+                    color:gray;
+                }
+
+
+                .tablet-icons{
+                    opacity: 0;
+                }
+               
+            }
+        }
     }
 }
 
@@ -174,12 +253,45 @@
 
     
  }
+ 
 }
 
 
 @media screen and (max-width:900px){
+
+        .heritage{
+          padding-left: 10%;
+         .heritage-text{
+             max-width: 80% !important;
+         }
+        }
+
     .heritage-image-wrap{
         display: none;
+    }
+
+    .leaders{
+        flex-direction: column;
+
+        .leaders-title{
+            padding-left: 10%;
+        }
+        .team{
+            padding-top: 5%cha;
+            padding-left: 10%;
+            padding-right: 10%;
+
+            .worker{
+                .tablet-icons{
+                    opacity: 1 !important;
+                    svg{
+                        padding: 5px;
+                        cursor: pointer;
+                    }
+                    
+                }
+            }
+        }
     }
 }
 
@@ -216,7 +328,7 @@
             }
         }   
     }
-
+   
     
 }
 
@@ -270,6 +382,23 @@
                 .about-line{
                     display: none;
                 }
+            }
+        }
+
+        .leaders{
+            .team{
+                display: grid;
+                grid-template-columns: repeat(1, 2fr);
+                 grid-column-gap: 25px;
+                grid-row-gap: 15px;
+                
+                
+            .worker{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: 400px;
+            }
             }
         }
     }

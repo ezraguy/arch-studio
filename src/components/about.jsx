@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../scss/about.scss';
 import heroImg from '../images/about-images/image-hero.jpg';
 import heritageImg from '../images/about-images/image-heritage.jpg'
+import jakeImg from '../images/about-images/avatar-jake.jpg';
+import thompsonImg from '../images/about-images/avatar-thompson.jpg';
+import jacksonImg from '../images/about-images/avatar-jackson.jpg';
+import mariaImg from '../images/about-images/avatar-maria.jpg';
+import TwitterIcon from './utils/twitter-icon';
+import LinkedInIcon from './utils/linkedIn-icon';
+
 const About = () => {
+    const [team] = useState([
+        { id: 1, name: 'Jake Richards', img: jakeImg, role: 'Chief Architect' },
+        { id: 2, name: 'Thompson Smith', img: thompsonImg, role: 'Header of Fiance' },
+        { id: 3, name: 'Jackson Rourke', img: jacksonImg, role: 'Lead Designer' },
+        { id: 4, name: 'Maria Simpson', img: mariaImg, role: 'Senior Architect' }])
     return (
         <div className="about">
             <div className="line"></div>
@@ -37,6 +49,42 @@ const About = () => {
                 </div>
                 <div className="heritage-image-wrap">
                     <img src={heritageImg} className="heritage-img" alt="" />
+                </div>
+            </div>
+
+
+            <div className="leaders">
+                <div className="leaders-title">
+                    the leaders
+                </div>
+
+                <div className="team">
+                    {team.map((worker) => {
+                        return (
+                            <div className="worker" key={worker.id}>
+                                <div className="worker-img-wrap">
+
+                                    <img src={worker.img} className="worker-img" alt="" />
+                                    <div className="overlay">
+                                        <TwitterIcon fill="white" className="twitter-icon icon" />
+                                        <LinkedInIcon fill={"white"} className="icon" />
+                                    </div>
+                                </div>
+
+                                <div className="worker-name">
+                                    {worker.name}
+                                </div>
+                                <div className="worker-role">
+                                    {worker.role}
+                                </div>
+                                <div className="tablet-icons">
+                                    <TwitterIcon fill="black" className="twitter-icon icon" />
+                                    <LinkedInIcon fill="black" className="icon" />
+                                </div>
+                            </div>
+                        )
+
+                    })}
                 </div>
             </div>
         </div>
