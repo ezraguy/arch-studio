@@ -27,8 +27,8 @@ const Featured = () => {
         setScreenWidth(screenWidth)
     }
     useEffect(() => {
-        handleResize();
         window.addEventListener('resize', handleResize);
+        handleResize();
     }, [])
     return (
         <div className="featured">
