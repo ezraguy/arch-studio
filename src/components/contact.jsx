@@ -1,8 +1,12 @@
 import React from 'react'
 import '../scss/contact.scss';
-import heroContact from '../images/contact-images/image-hero.jpg';
+import heroContact from '../images/contact-images/desktop/image-hero.jpg';
+
+import map from '../images/contact-images/desktop/image-map.png';
 
 const Contact = () => {
+   
+
     return (
         <div className="contact">
             <div className="line"></div>
@@ -63,6 +67,10 @@ const Contact = () => {
                     </div>
             
                 </div>
+            </div>
+
+            <div className="map-wrap">
+                <img src={map} className="map" alt="map"/>
             </div>
         </div>
     );

@@ -16,6 +16,7 @@
             background-color: black;
             display: flex;
             .contact-hero-img{
+                content: url(../images/contact-images/desktop/image-hero.jpg);
                 opacity: .6;
             }
         }
@@ -137,6 +138,18 @@
             }
         }
     }
+
+    .map-wrap{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: center;
+
+        .map{
+          
+           min-width: 300px;
+        }
+    }
 }
 
 @media screen and (max-width:1160px){
@@ -191,6 +204,15 @@
 }
 
 @media screen and (max-width:860px){
+
+
+    .map{
+        content: url(../images/contact-images/tablet/image-map.png);
+    }
+
+    .contact-hero-img{
+        content: url(../images/contact-images/tablet/image-hero.jpg) !important ;
+    }
     .contact-details{
         padding: 0;
         align-items: center;
@@ -253,7 +275,10 @@
                 position: relative;
                 width: 100% ;
                 max-height: 300px;
-
+                .contact-hero-img{
+                    
+                    content: url(../images/contact-images/mobile/image-hero.jpg) !important;
+                }
                 
             }
 
@@ -286,6 +311,9 @@
                     display: none;
                 }
             }
+        }
+        .map{
+            content: url(../images/contact-images/mobile/image-map.png);
         }
     }
 }
