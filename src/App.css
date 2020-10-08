@@ -28,8 +28,13 @@
 }
 a {
   color: #7D828F;
+  text-decoration: none !important;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
+Link{
+
 }
 
 html,body{

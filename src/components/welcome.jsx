@@ -3,6 +3,7 @@ import '../scss/welcome.scss';
 import imgWelcome from '../images/home-images/image-welcome.jpg';
 import smallTeam from '../images/home-images/image-small-team.jpg'
 import MainButton from './utils/main-button';
+import { Link } from 'react-router-dom';
 
 const Welcome = () => {
     return (
@@ -40,8 +41,9 @@ const Welcome = () => {
                     <div className="content">
                         <p className="team-title">Small team, big ideas</p>
                         <div className="button-wrap">
-
-                            <MainButton text="About us" />
+                            <Link to="/about">
+                                <MainButton text="About us" />
+                            </Link>
                         </div>
 
                     </div>

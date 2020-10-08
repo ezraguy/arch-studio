@@ -9,6 +9,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
 import 'swiper/components/effect-fade/effect-fade.scss';
 import SwiperCore, { EffectFade } from 'swiper';
+import { Link } from 'react-router-dom';
 
 
 
@@ -90,7 +91,9 @@ const Slider = () => {
                                     <div className="project-title">{item.title}</div>
                                     <div className="project-text">{item.text}</div>
                                     <div className="show-portfolio-wrap">
-                                        <MainButton text="See our portfolio" />
+                                        <Link to="/portfolio">
+                                            <MainButton text="See our portfolio" />
+                                        </Link>
                                     </div>
                                 </div>
 

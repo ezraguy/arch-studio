@@ -6,6 +6,7 @@ import Navbar from './components/navbar';
 import { Switch, Route } from 'react-router-dom';
 import About from './components/about';
 import Portfolio from './components/portfolio';
+import Contact from './components/contact';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Switch>
+        <Route path="/contact" component={Contact} />
         <Route path="/about" component={About} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/" component={Main} />

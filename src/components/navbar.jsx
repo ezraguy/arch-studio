@@ -3,7 +3,7 @@ import '../scss/navbar.scss';
 import hamburger from '../images/icons/icon-hamburger.svg';
 import closeIcon from '../images/icons/icon-close.svg';
 import Logo from './utils/logo';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const [navItemsClass, setNavItemsClass] = useState(false);
@@ -36,17 +36,17 @@ const Navbar = () => {
                 </Link>
                 <div className={navItemsClass ? 'nav-items show' : 'nav-items'}>
 
-                    <Link className="nav-item" to="portfolio">
+                    <NavLink className="nav-item" activeClassName="active-link" to="portfolio">
                         <p>Portfolio</p>
-                    </Link>
+                    </NavLink>
 
-                    <Link className="nav-item" to="about">
+                    <NavLink className="nav-item" activeClassName="active-link" to="about">
                         <p>About Us</p>
-                    </Link>
+                    </NavLink>
 
-                    <Link className="nav-item" to="contact">
+                    <NavLink className="nav-item" activeClassName="active-link" to="contact">
                         <p>Contact</p>
-                    </Link>
+                    </NavLink>
 
 
                 </div >

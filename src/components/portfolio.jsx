@@ -63,6 +63,8 @@ const Portfolio = () => {
     }, [])
     return (
         <div className="portfolio">
+            <div className="line"></div>
+            <div className="page-name">Portfolio</div>
             {projects.map((project) => {
                 return (
                     <div className="project" key={project.id}>

@@ -1,0 +1,291 @@
+.contact{
+    padding-left: 10%;
+    padding-right: 10%;
+
+    .page-name{
+        top: 230px;
+        left: -20px;
+    }
+    .contact-main{ 
+        position: relative;
+        display: flex;
+
+        margin-bottom: 300px;
+
+        .contact-img-wrap{
+            background-color: black;
+            display: flex;
+            .contact-hero-img{
+                opacity: .6;
+            }
+        }
+
+        .contact-content-wrap{ 
+            position: relative;
+            background-color: #fff;
+            min-width: 650px;   
+            margin-left: -140px;
+            margin-top: 250px;
+           
+            .contact-banner{
+                top: -70px;             
+                position: absolute;
+                font-size: 120pt;
+                color: #EEEFF4;
+                font-weight: bold;
+                p{
+                    margin: 0;
+                }
+            }
+
+            .contact-content{
+                padding-top: 100px;
+                padding-left: 25%;
+                width: inherit;
+                height:200px;
+
+                .contact-line{
+                    position: absolute;
+                    top: 100px;
+                    left: 25%;
+                    content: '';
+                    width: 50px;
+                    border-top: 1px #C8CCD8 solid;
+                }
+
+                .contact-header{
+                    color: black;
+                    font-size: 25pt;
+                    font-weight: bold;
+                    max-width: 300px;
+                    padding-top: 50px;
+                    padding-bottom: 40px;
+                }
+
+                .contact-text{
+                    color: #7D828F;
+                    max-width:285px;
+                    font-weight: 700;
+                    text-align: justify;
+                }
+                
+            }
+        }
+    }   
+
+    .contact-details{
+        display: flex;
+        position: relative;
+       justify-content: space-between;
+
+        .details-line{
+            position: absolute;
+            top: -70px;
+            content: '';
+            width: 50px;
+            border-top: 1px #C8CCD8 solid;
+        }
+        .details-title{
+            font-size: 40pt;
+            color: black;
+            font-weight: bold;
+            max-width: 200px;
+        }
+
+        .main-office{
+            display: flex;
+            flex-direction: column;
+            color: #60636D; 
+            font-size: 12pt;
+
+            .main-office-title{
+                font-weight: bold;
+            }
+
+            .view-on-map{
+                display: flex;
+                flex-direction: row-reverse;
+                color: black;
+                font-weight: bold;
+                display: inline;
+                cursor: pointer;
+                margin-right: 5px;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+                p{
+                    svg{
+                        position: absolute;
+                        padding-left: 20px;
+                        
+                    }
+                }
+                
+               
+            }
+
+            
+
+           
+        }
+
+        .second-office{
+            @extend .main-office;
+            .second-office-title{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1160px){
+    .contact{
+        padding: 0;
+     
+        
+        .contact-main{
+           
+            .contact-img-wrap{
+                max-width: 550px;
+                margin-right: auto;
+                margin-left: auto;
+                .contact-hero-img{
+                    min-width: 500px;
+                    width: 100%;
+                }
+            }
+            
+            
+           
+            
+            .contact-content-wrap{
+                margin-left: -450px !important;
+              
+                
+                .contact-content{
+                    max-width: 100%;
+                }
+                .contact-banner{
+                    font-size: 90pt;
+                    right: 200px;
+                }
+            }
+    
+    
+            
+        }
+    
+        .page-name{ 
+            display: none;
+        }   
+        .line{
+            display: none;
+        }
+    
+    
+    
+        
+     }
+     
+}
+
+@media screen and (max-width:860px){
+    .contact-details{
+        padding: 0;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 100px;
+        
+        .details-title{
+           padding-left: 0%;
+             margin-bottom: 20px;
+             max-width: 100% !important;
+             font-size:28pt !important;
+       }
+       .main-office{
+           margin-bottom: 40px;
+       }
+    }
+       
+}
+
+@media screen and (max-width:777px){
+        .contact{
+            
+    
+            .contact-main{    
+                display: flex;
+                justify-content: center ;
+                padding-left: 10%;
+            .contact-content{
+                padding-top: 5% !important;
+                 padding-left: 10% !important;
+            .contact-line{
+                top: 15% !important;
+               left: 10% !important;
+            }
+            .contact-header{
+                font-size: 35pt !important;
+                max-width: 360px !important;
+                
+            }
+            
+        
+                 }
+             }
+            }
+}
+
+@media screen and (max-width:630px){
+
+    .contact{   
+        width: 100%;
+        .contact-main{
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center !important;
+            
+            
+            .contact-img-wrap{
+                position: relative;
+                width: 100% ;
+                max-height: 300px;
+
+                
+            }
+
+            .contact-content-wrap{
+
+                min-width: 100% !important;
+                max-width: 100% !important;
+                padding-left: 10%;
+                position: relative;
+                margin-left: 0 !important;
+                margin-top: 0;
+            
+              
+                .contact-content{
+                    position: relative;
+                    width: 100% !important;
+                    padding-left: 2% !important;
+                    display: flex;
+                    flex-direction: column;
+
+                    .contact-header{
+                        font-size:30pt !important;
+                    }
+                }
+
+                .contact-banner{
+                    display: none;
+                }
+                .contact-line{
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -18,7 +18,9 @@ const Footer = () => {
             </div>
 
             <div className="btn-wrap">
-                <MainButton text={"See Our Portfolio"} />
+                <Link to="/portfolio">
+                    <MainButton text={"See Our Portfolio"} />
+                </Link>
             </div>
         </div>
     );
