@@ -1,12 +1,13 @@
 import React from 'react'
 import '../scss/contact.scss';
 import heroContact from '../images/contact-images/desktop/image-hero.jpg';
-
+import { useForm } from "react-hook-form";
 import map from '../images/contact-images/desktop/image-map.png';
 
 const Contact = () => {
    
-
+    const { contact, handleSubmit, errors } = useForm();
+ 
     return (
         <div className="contact">
             <div className="line"></div>
@@ -71,6 +72,19 @@ const Contact = () => {
 
             <div className="map-wrap">
                 <img src={map} className="map" alt="map"/>
+            </div>
+
+            <div className="contact-form">
+                <div className="contact-form-title">
+                    Connect with us
+                </div>
+                <div className="form">
+                    <form onSubmit={handleSubmit}>
+                        <input type="text" name="name" ref={contact} placeholder="Name" />
+                        <input type="email" name="email" ref={contact} placeholder="Email"/>
+                        <input type="text-area" ref={contact} placeholder="Message"/>
+                    </form>
+                </div>
             </div>
         </div>
     );
