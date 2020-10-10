@@ -13,13 +13,13 @@ const Featured = () => {
     const [exampleProjects] = useState(
         [
             {
-                id: 1, title: 'Project Del Sol', src: firstProject, srcT: firstProjectT
+                id: 1, title: 'Project Del Sol', src: firstProject, srcT: firstProjectT, aosDelay: '100'
             },
             {
-                id: 2, title: '228B Tower', src: secondProject, srcT: secondProjectT
+                id: 2, title: '228B Tower', src: secondProject, srcT: secondProjectT, aosDelay: '200'
             },
             {
-                id: 3, title: 'Le Prototype', src: thirdProject, srcT: thirdProjectT
+                id: 3, title: 'Le Prototype', src: thirdProject, srcT: thirdProjectT, aosDelay: '300'
             }
         ])
 
@@ -49,7 +49,7 @@ const Featured = () => {
 
                 {exampleProjects.map((project, index) => {
                     return (
-                        <div key={project.id} className="example-project">
+                        <div key={project.id} className="example-project" data-aos="fade-down" data-aos-delay={project.aosDelay}>
 
                             {  screenWidth <= 1146 ?
                                 <div className="example-project-img">

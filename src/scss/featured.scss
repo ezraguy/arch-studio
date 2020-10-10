@@ -73,6 +73,11 @@
             
         }
     }
+    .main-btn{
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
 }
 
 
@@ -105,11 +110,15 @@
     }
     .button-wrap{
         position: absolute;
-        width: 90%;
+        width: 80%;
         bottom: 0;
-        padding-left: 10%;
+       padding-left: 10%;
         margin-bottom: 20px;
         justify-content: center;
+
+        button{
+            width: 100%;
+        }
     }
 
     .example-projects{

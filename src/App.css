@@ -33,9 +33,7 @@ a {
   -webkit-tap-highlight-color: transparent; /* For some Androids */
 }
 
-Link{
 
-}
 
 html,body{
   -webkit-tap-highlight-color:transparent;
@@ -46,6 +44,13 @@ html,body{
   .App{
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+/* disabling animation delay on mobile */
+@media screen and (max-width: 800px) {
+  [data-aos-delay] {
+    transition-delay: 0s !important;
   }
 }
 

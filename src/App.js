@@ -7,9 +7,13 @@ import { Switch, Route } from 'react-router-dom';
 import About from './components/about';
 import Portfolio from './components/portfolio';
 import Contact from './components/contact';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 
 
 function App() {
+  Aos.init();
   return (
     <div className="App">
       <Navbar />

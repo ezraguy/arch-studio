@@ -66,7 +66,7 @@ const Slider = () => {
         changeBtnClass(index);
     }
     return (
-        <div className="slider">
+        <div className="slider" data-aos="fade-right">
             <Swiper
                 spaceBetween={50}
                 slidesPerView={1}
@@ -80,7 +80,7 @@ const Slider = () => {
                 {projects.map((item) => {
                     return (
                         <SwiperSlide key={item.id} >
-                            <div className="main" >
+                            <div className="main"  >
 
 
                                 <img src={item.src} className="project-img" alt="project" />
