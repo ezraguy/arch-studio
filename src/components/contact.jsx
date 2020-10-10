@@ -6,9 +6,11 @@ import map from '../images/contact-images/desktop/image-map.png';
 
 const Contact = () => {
    
-    const { contact, handleSubmit, errors } = useForm();
+    const { register, handleSubmit,errors } = useForm();
     
-
+    const onSubmit = (data) => {
+        console.log(data);
+    }
     return (
         <div className="contact">
             <div className="line"></div>
@@ -80,18 +82,26 @@ const Contact = () => {
                     Connect with us
                 </div>
                 <div className="form" data-aos="fade-right">
-                    <form onSubmit={handleSubmit}>
-                        <input type="text" name="name" ref={contact} placeholder="Name" />
-                        <input type="email" name="email" ref={contact} placeholder="Email"/>
-                        <input type="text-area" ref={contact} placeholder="Message"/>
-                        
-                   
+                    <form onSubmit={handleSubmit(onSubmit)}>
+                        <div className="input-wrap">
+                        <input type="text" name="name" ref={register({required:true,minLength:2})} placeholder="Name" />
+                        {errors.name&&<span>This cannot be empty</span>}
+                        </div>
+                        <div className="input-wrap">
+                        <input type="text" name="email" ref={register({required:true})} placeholder="Email"/>
+                        {errors.email&&<span>This cannot be empty</span>}
+
+                        </div>
+                        <div className="input-wrap">
+                        <input type="text-area" name="message" ref={register({required:true})} placeholder="Message"/>
+                        </div>
+                        <button className="form-btn" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20"><g fill="none" fillRule="evenodd" stroke="white" strokeWidth="2"><path d="M15 1l9 9-9 9M0 10h24"/></g></svg>
+            </button>
                     </form>
                 </div>
                     
-            <button className="form-btn" onClick={handleSubmit}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20"><g fill="none" fillRule="evenodd" stroke="white" strokeWidth="2"><path d="M15 1l9 9-9 9M0 10h24"/></g></svg>
-            </button>
+           
             </div>
         </div>
     );
