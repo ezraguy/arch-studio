@@ -72,7 +72,7 @@ const Portfolio = () => {
             <div className="page-name">Portfolio</div>
             {projects.map((project) => {
                 return (
-                    <div className="project" key={project.id}>
+                    <div className="project" key={project.id} data-aos="zoom-in">
                         {screenWidth < 900 && screenWidth > 550 && <img src={project.srcT} className="project-img" alt="" />}
                         {screenWidth >= 900 && <img src={project.src} className="project-img" alt="" />}
                         {screenWidth < 550 && <img src={project.src} className="project-img" alt="" />}
