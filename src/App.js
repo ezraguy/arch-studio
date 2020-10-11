@@ -15,20 +15,18 @@ import 'aos/dist/aos.css';
 function App() {
   Aos.init();
   return (
+    <div className="App">
+      <Navbar />
 
-    <HashRouter basename="/">
-      <div className="App">
-        <Navbar />
+      <Switch>
+        <Route path="/contact" exact component={Contact} />
+        <Route path="/about" exact component={About} />
+        <Route path="/portfolio" exact component={Portfolio} />
+        <Route path="/" component={Main} />
+      </Switch>
+      <Footer />
+    </div>
 
-        <Switch>
-          <Route path="/contact" exact component={Contact} />
-          <Route path="/about" exact component={About} />
-          <Route path="/portfolio" exact component={Portfolio} />
-          <Route path="/" component={Main} />
-        </Switch>
-        <Footer />
-      </div>
-    </HashRouter>
 
   );
 }
