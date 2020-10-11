@@ -43,6 +43,26 @@
         top: 40%;
         right: -100px;
     }
+    .attribution{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: right;
+        padding-bottom: 10px;
+        a{
+            color: blue;
+        }
+    }
+}
+
+@media screen and(max-width:901px){
+    .attribution{
+        padding-left: 10%;
+    }
+
 }
 
 @media screen and(max-width:894px){
@@ -50,6 +70,19 @@
 
     .name{
         margin-right: 10px !important;
+    }
+    .attribution{
+        position: absolute;
+        margin-left: auto;
+        
+        bottom: 0;
+       
+        right: 0 ;
+        font-size: 10pt !important;
+        text-align: center;
+        a{
+            color: blue;
+        }
     }
 }
 
@@ -79,8 +112,18 @@
             top: 34%;
             right: -100px;
         }
+        .attribution{
+            padding-left: 20% ;
+        }
     }
 }
+
+@media screen and(max-width:650px){
+    .attribution{
+        font-size: 8pt !important;
+    }
+}
+
 
 @media screen and(max-width:590px){
     .footer{
@@ -110,6 +153,11 @@
             position: static !important;
             
 
+        }
+        .attribution{
+           text-align: center;
+           font-size: 10pt !important;
+           padding-left: 0% !important;
         }
     }
 }

@@ -5,6 +5,8 @@ import MainButton from '../components/utils/main-button';
 import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
+
+
         <div className="footer">
             <div className="name">
                 <Logo fill={"white"} />
@@ -22,7 +24,13 @@ const Footer = () => {
                     <MainButton text={"See Our Portfolio"} />
                 </Link>
             </div>
+            <div className="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+Coded by <a href="https://github.com/ezraguy">Guy Ezra</a>.
+</div>
         </div>
+
+
     );
 }
 
