@@ -4,13 +4,16 @@
     position: relative;
     margin-bottom: 100px;
     .page-name{
-        top: 230px;
+        top: 140px;
         left: -20px;
     }
+    .line{
+        position: fixed !important;
+       
+    } 
     .contact-main{ 
         position: relative;
         display: flex;
-
         margin-bottom: 300px;
 
         .contact-img-wrap{
