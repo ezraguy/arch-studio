@@ -25,13 +25,13 @@ const About = () => {
 
                 </div>
                 <div className="about-content-wrap">
-                    <div className="about-banner" data-aos="fade-left">
+                    <div className="about-banner" data-aos="fade-down">
                         <p>About</p>
                     </div>
                     <div className="about-content">
-                        <div className="about-line" data-aos="fade-left"></div>
-                        <div className="about-header" data-aos="fade-left">Your Team of professionals</div>
-                        <div className="about-text" data-aos="fade-left">
+                        <div className="about-line" data-aos="fade-down"></div>
+                        <div className="about-header" data-aos="fade-down">Your Team of professionals</div>
+                        <div className="about-text" data-aos="fade-down">
                             Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings.
                         </div>
                     </div>

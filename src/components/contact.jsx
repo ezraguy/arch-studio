@@ -28,10 +28,10 @@ const Contact = () => {
 
                 </div>
                 <div className="contact-content-wrap">
-                    <div className="contact-banner" data-aos="fade-right">
+                    <div className="contact-banner" data-aos="fade-down">
                         <p>contact</p>
                     </div>
-                    <div className="contact-content" data-aos="fade-right">
+                    <div className="contact-content" data-aos="fade-down">
                         <div className="contact-line"></div>
                         <div className="contact-header">Tell us about your project</div>
                         <div className="contact-text">
