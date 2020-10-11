@@ -3,13 +3,20 @@ import '../scss/contact.scss';
 import heroContact from '../images/contact-images/desktop/image-hero.jpg';
 import { useForm } from "react-hook-form";
 import map from '../images/contact-images/desktop/image-map.png';
+import Swal from 'sweetalert2'
+import 'sweetalert2/src/sweetalert2.scss'
 
 const Contact = () => {
    
     const { register, handleSubmit,errors } = useForm();
     
     const onSubmit = (data) => {
-        console.log(data);
+        Swal.fire({
+            title: 'Success!',
+            text: `Thanks for the message ${data.name}. We will get in touch with you in the next few days.`,
+            icon: 'success',
+            confirmButtonText: 'OK'
+          })
     }
     return (
         <div className="contact">
@@ -84,8 +91,9 @@ const Contact = () => {
                 <div className="form" data-aos="fade-right">
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="input-wrap">
-                        <input type="text" name="name" ref={register({required:true,minLength:2})} placeholder="Name" />
-                        {errors.name&&<span>This cannot be empty</span>}
+                        <input type="text" name="name" ref={register({required:'This cannot be empty',minLength:{value:2,message:"Too short"}})} placeholder="Name" />
+                        {errors.name&&<span>{errors.name.message}</span>}
+                      
                         </div>
                         <div className="input-wrap">
                         <input type="text" name="email" ref={register({required:true})} placeholder="Email"/>
@@ -94,10 +102,12 @@ const Contact = () => {
                         </div>
                         <div className="input-wrap">
                         <input type="text-area" name="message" ref={register({required:true})} placeholder="Message"/>
-                        </div>
+                        {errors.message&&<span>This cannot be empty</span>}
                         <button className="form-btn" type="submit">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20"><g fill="none" fillRule="evenodd" stroke="white" strokeWidth="2"><path d="M15 1l9 9-9 9M0 10h24"/></g></svg>
             </button>
+                        </div>
+                       
                     </form>
                 </div>
                     

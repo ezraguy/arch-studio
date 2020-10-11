@@ -11,10 +11,10 @@ import LinkedInIcon from './utils/linkedIn-icon';
 
 const About = () => {
     const [team] = useState([
-        { id: 1, name: 'Jake Richards', img: jakeImg, role: 'Chief Architect' },
-        { id: 2, name: 'Thompson Smith', img: thompsonImg, role: 'Header of Fiance' },
-        { id: 3, name: 'Jackson Rourke', img: jacksonImg, role: 'Lead Designer' },
-        { id: 4, name: 'Maria Simpson', img: mariaImg, role: 'Senior Architect' }])
+        { id: 1, name: 'Jake Richards', img: jakeImg, role: 'Chief Architect', aosDelay: "100" },
+        { id: 2, name: 'Thompson Smith', img: thompsonImg, role: 'Header of Fiance', aosDelay: "200" },
+        { id: 3, name: 'Jackson Rourke', img: jacksonImg, role: 'Lead Designer', aosDelay: "300" },
+        { id: 4, name: 'Maria Simpson', img: mariaImg, role: 'Senior Architect', aosDelay: "400" }])
     return (
         <div className="about">
             <div className="line"></div>
@@ -25,13 +25,13 @@ const About = () => {
 
                 </div>
                 <div className="about-content-wrap">
-                    <div className="about-banner">
+                    <div className="about-banner" data-aos="fade-left">
                         <p>About</p>
                     </div>
                     <div className="about-content">
-                        <div className="about-line"></div>
-                        <div className="about-header">Your Team of professionals</div>
-                        <div className="about-text">
+                        <div className="about-line" data-aos="fade-left"></div>
+                        <div className="about-header" data-aos="fade-left">Your Team of professionals</div>
+                        <div className="about-text" data-aos="fade-left">
                             Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings.
                         </div>
                     </div>
@@ -40,14 +40,14 @@ const About = () => {
 
             <div className="heritage">
                 <div className="heritage-line"></div>
-                <div className="heritage-content">
-                    <div className="heritage-header">Our Heritage</div>
+                <div className="heritage-content" data-aos="fade-right">
+                    <div className="heritage-header" >Our Heritage</div>
 
                     <div className="heritage-text">Founded in 2007, we started as a trio of architects. Our complimentary skills and relentless attention to detail turned Arch into one of the most sought after boutique firms in the country.</div>
                     <div className="heritage-text"> Specializing in Urban Design allowed us to focus on creating exceptional structures that live in harmony with their surroundings. We consider every detail from every surrounding element to inform our designs.</div>
                     <div className="heritage-text">Our small team of world-class professionals provides input on every project.</div>
                 </div>
-                <div className="heritage-image-wrap">
+                <div className="heritage-image-wrap" data-aos="fade-left">
                     <img src={heritageImg} className="heritage-img" alt="heritage" />
                 </div>
             </div>
@@ -61,7 +61,7 @@ const About = () => {
                 <div className="team">
                     {team.map((worker) => {
                         return (
-                            <div className="worker" key={worker.id}>
+                            <div className="worker" key={worker.id} data-aos="zoom-in" data-aos-delay={worker.aosDelay}>
                                 <div className="worker-img-wrap">
 
                                     <img src={worker.img} className="worker-img" alt="" />
