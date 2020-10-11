@@ -3,7 +3,7 @@ import './App.css';
 import Footer from './components/footer';
 import Main from './components/main';
 import Navbar from './components/navbar';
-import { Switch, Route, HashRouter } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import About from './components/about';
 import Portfolio from './components/portfolio';
 import Contact from './components/contact';
