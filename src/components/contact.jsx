@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import '../scss/contact.scss';
 import heroContact from '../images/contact-images/desktop/image-hero.jpg';
 import { useForm } from "react-hook-form";
@@ -9,6 +9,9 @@ import 'sweetalert2/src/sweetalert2.scss'
 const Contact = () => {
    
     const { register, handleSubmit,errors } = useForm();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     
     const onSubmit = (data) => {
         Swal.fire({

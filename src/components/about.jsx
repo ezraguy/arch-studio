@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../scss/about.scss';
 import heroImg from '../images/about-images/image-hero.jpg';
 import heritageImg from '../images/about-images/image-heritage.jpg'
@@ -15,6 +15,12 @@ const About = () => {
         { id: 2, name: 'Thompson Smith', img: thompsonImg, role: 'Header of Fiance', aosDelay: "200" },
         { id: 3, name: 'Jackson Rourke', img: jacksonImg, role: 'Lead Designer', aosDelay: "300" },
         { id: 4, name: 'Maria Simpson', img: mariaImg, role: 'Senior Architect', aosDelay: "400" }])
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+
+
+    }, [])
     return (
         <div className="about">
             <div className="line"></div>

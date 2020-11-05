@@ -60,6 +60,7 @@ const Portfolio = () => {
     useEffect(() => {
 
         window.addEventListener('resize', handleResize);
+        window.scrollTo(0, 0);
         handleResize();
         return () => {
             window.removeEventListener('resize', handleResize);
